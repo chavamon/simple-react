@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-function Clients() {
+function List() {
+  
   const [clients, setClients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -44,4 +45,4 @@ function Clients() {
   );
 }
 
-export default Clients;
+export default List;

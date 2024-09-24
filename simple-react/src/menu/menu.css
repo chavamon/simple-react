@@ -1,0 +1,50 @@
+/* menu.css */
+
+/* Menu Container */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Menu Item */
+.menu-item {
+  color: red;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Menu Item Hover Effect */
+.menu-item:hover {
+  background-color: #555;
+  text-decoration: none;
+}
+
+/* Active Menu Item */
+.menu-item.active {
+  background-color: #444; 
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+}
